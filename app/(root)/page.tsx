@@ -1,6 +1,9 @@
-import { UserButton } from "@clerk/nextjs";
+import { fetchThreads } from "@/lib/actions/thread.actions";
 
-export default function Home() {
+export default async function Home() {
+  const result = await fetchThreads(1, 30);
+
+  console.log(result, "### result  ###");
   return (
     <>
       <h1 className="head-text text-left">Home</h1>
