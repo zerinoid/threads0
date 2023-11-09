@@ -20,8 +20,8 @@ interface Props {
   comments: {
     author: {
       image: string;
-    }[];
-  };
+    };
+  }[];
   isComment?: boolean;
 }
 export function ThreadCard({
